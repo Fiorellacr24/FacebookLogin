@@ -4,7 +4,7 @@ const Dashboard = () => {
     const dashboard = $('<div class="dashboard">Dashboard Component</div>');
     
     if(state.user){
-        const name = $('<h1>' +state.user.name+ '</h1>');
+        const name = $('<h1>' +state.user.name+ '</h1>''<br>');
         const email = $('<p>' +state.user.email+ '</p>');
         
         dashboard.append(name);
